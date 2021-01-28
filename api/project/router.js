@@ -1,7 +1,7 @@
 // build your `/api/resources` router here
 
 const express = require('express')
-// const Project = require('./model')
+// const Projects = require('./model')
 const router = express.Router();
 
 const db = require('../../data/dbConfig')
@@ -26,7 +26,7 @@ router.post('/', async (req, res) => {
         res.status(201).json(newResource)
     })
     .catch(err => {
-        res.status(500).json({message: err.message})
+        res.status(500).json({err: err.message})
     })
 })
 

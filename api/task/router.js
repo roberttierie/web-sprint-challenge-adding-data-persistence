@@ -1,7 +1,7 @@
 // build your `/api/resources` router here
 
 const express = require('express')
-// const Project = require('./model')
+// const Tasks = require('./model')
 const router = express.Router();
 
 const db = require('../../data/dbConfig')
